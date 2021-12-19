@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+.aboutLeft{
+    width:50%;
+    float:left;
+    text-align: center;
+    background:crimson;
+    height:calc(100vh - 150px)
+  }
+  h1{
+    font-family:'Poppins',sans-serif
+
+  }
+
+  .extraInfo{
+    line-height:25px;
+    /* opacity:0.6; */
+    width:50%;
+    margin:0 auto;
+    font-family:'Poppins',sans-serif
+
+  }
+  .rightInfo{
+    width:100%;
+    float:right;
+    height:calc(100vh - 150px);
+    background:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)),url('https://images.unsplash.com/photo-1605379399642-870262d3d051?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=906&q=80')
+
+  }
+  .aboutRight{
+    width:50%;
+    float:right;
+    text-align:center
+  }
+
+  .logo{
+    width:120px;
+  }
+  .logoWrapper{
+    display:grid;
+    grid-template-columns:50% 50%;
+    row-gap:100px;
+    margin:auto;
+    column-gap:-500px;
+    margin:0 auto;
+    max-width:500px;
+    position:relative;
+    right:150px;
+    bottom:100px;
+    
+  }
+  .logoWrapper > div > img{
+    cursor:pointer;
+    transition:0.7s;
+  
+  }
+  .logoWrapper > img:hover{
+    filter:drop-shadow( 0 10px 20px rgb(255,255,255))
+  }
+  .logoWrapper > .pythonLogo:hover,.cssLogo:hover{
+    transform:scale(1.2) 
+  }
+  
+  .htmlLogo{
+  transform:scale(1.86);
+  position:relative;
+  top:27px;
+  }
+  .htmlLogo:hover{
+    transform:scale(2.3)
+  }
+  .pythonLogo:hover{
+    transform:scale(1.2)
+  }
+  .jsLogo{
+    transform:scale(0.9);
+    background:red;
+  }
+  .jsLogo:hover{
+    transform:scale(1.1)
+  }
+  .right{
+    width:50%;
+    float:right;
+  }
+  .expertise{
+      font-weight:700;
+      font-size:30px;
+      position:relative;
+      left:260px;
+      top:40px;
+  }

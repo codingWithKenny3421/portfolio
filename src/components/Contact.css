@@ -1,0 +1,91 @@
+.contact{
+    width:100%;
+    background:#080c1f;
+    color:#ffffff;
+  
+}
+.topSection{
+/* background:crimson; */
+display:flex;
+justify-content:flex-end;
+align-items:center;
+flex-direction:row
+}
+.rightContact{
+
+    width: 50%;
+}
+
+.form > *{
+    margin-top:25px;
+}
+.form{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+}
+.sendButton{
+    background:white;
+    border:none;
+    padding:12px 20px;
+    width:90px;
+    border-radius:4px;
+    cursor:pointer;
+    transition:0.3s;
+}
+.sendButton:hover{
+    transform:scaleX(1.15)
+}
+input, textarea{
+    outline:none;
+    cursor:pointer;
+    width:90%;
+    background:rgba(0,0,0,0.2);
+    color:white;
+    border:1px solid rgb(206, 206, 206);
+    border-radius:2px;
+    padding-left:5px;
+    transition:0.3s;
+}
+input{
+    height:50px;
+}
+input:focus, textarea:focus{
+    box-shadow: 0 0 20px rgba(255,255,255,0.2);
+    background:rgba(0,0,0,0.3)
+}
+input::placeholder, textarea::placeholder{
+    color:white;
+}
+textarea{
+    height:200px;
+}
+.leftContact{
+    width:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    height:calc(100vh - 55px)
+}
+.leftContact > span:nth-child(1){
+    font-size:35px;
+    font-weight:100
+}
+.socialIcons{
+    background:crimson;
+    width:100%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:row;
+}
+.socialIcons > * {
+    margin-left:90px;
+    font-size:30px;
+    width:60px;
+    background:rgba(255,255,255,0.3);
+    text-align:center;
+    padding:4px 5px;
+}
