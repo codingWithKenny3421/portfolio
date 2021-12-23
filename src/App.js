@@ -15,15 +15,15 @@ function App () {
     console.log(dark ? 'dark mode is on' : 'dark mode off')
   }
  return(
-   <div>
+   <div className = 'app'>
      <Header toggle = {dark}/>
-     {/* <Button text = {'Toggle'} onClick = {toggleDarkMode}/> */}
      <div className="sections">
      <Home/>
      <AboutLeft/>
      <AboutRight/>
      <Projects/>
      <Contact/>
+  
      </div>
 
    </div>

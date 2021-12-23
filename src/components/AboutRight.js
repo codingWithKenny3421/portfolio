@@ -11,7 +11,6 @@ const AboutRight = () => {
                 <h1>My Expertise</h1>
                 <p className = 'extraInfo-2'></p>
                 <div className = 'right'>
-                    <p className = 'expertise'>My expertise</p>
                      <div className = 'logoWrapper'>
             
                      <div className ='skillInfo cssInfo'>

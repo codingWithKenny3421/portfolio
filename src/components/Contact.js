@@ -7,30 +7,34 @@ const Contact = () => {
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
             <div className = 'topSection'>
           <div className = 'leftContact'>
-              <span>Contact me</span>
-              <h2>Let's get in touch!</h2>
+              <span className = 'contactMe'>Contact me</span>
+              <h2 className = 'getInTouch'>Let's get in touch!</h2>
               <div className = 'socialIcons'>
-              <i className="fab fa-discord"></i>
-              <i className="fab fa-youtube"></i>
-              <i class="fab fa-twitter"></i>
+              <a href = 'https://discord.com/invite/5xEuGpXtTW' target = '_blank'><i className="fab fa-discord icon"></i></a>
+              <a href = 'https://www.youtube.com/channel/UCWJV1nhZSRqS58vZQS2xP5A/featured' target ='_blank'><i className="fab fa-youtube icon"></i></a>
+              <a href = 'https://www.youtube.com/channel/UCWJV1nhZSRqS58vZQS2xP5A/featured' target = '_blank'><i class="fab fa-twitter icon"></i></a>
               </div>
           </div>
           <div className = 'rightContact'>
 
               <div className = 'formContainer'>
-                  <div className = 'form'>
-                  <input type='text' className = 'fullName' placeholder = 'Full Name'/> 
-           <input type='email' className ='email' placeholder = 'Email' />  
-          <textarea className = 'messageForm' placeholder = 'Send me any questions you may have :)'></textarea>
-          <button className = 'sendButton' >Send <i class="fas fa-angle-right"></i></button>
-                  </div>
+                  <form className = 'form' action = 'https://formspree.io/f/xknynapy' method = 'POST'>
+
+                  <input name = 'Name' type='text' className = 'fullName infoInput' placeholder = 'Your name...' required/> 
+
+           <input name = 'Email' type='email' className ='email infoInput' placeholder = 'Email 📧' required />  
+
+         
+          <textarea name ='Message' className = 'messageForm infoInput' placeholder = 'Send me any questions you may have 🙂' required></textarea>
+          <button className = 'sendButton' >Send <i class="fas fa-angle-right" id='angleIcon'></i></button>
+                  </form>
               </div>
             </div>
           </div>
           <div className = 'bottomSection'>
-          <p className = 'phoneNumber'>123-456-789</p>
-          <p className = 'myEmail'>example@gmail.com</p>
-          <p className = 'address'>Hendersonville NC 28739 USA</p>
+          <p className = 'phoneNumber'><i class="fas fa-phone-square-alt"></i> 123-456-789</p>
+          <p className = 'myEmail'><i class="far fa-envelope"></i> testing@gmail.com</p>
+          <p className = 'address'><i class="fas fa-map-marker-alt"></i> Hendersonville NC 28739 USA</p>
           </div>
 
         </div>

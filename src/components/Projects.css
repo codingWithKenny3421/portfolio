@@ -1,4 +1,22 @@
 .projects{
-    width:100%;
-    background:lightpink
+    width:95%;
+    background:#dfe7eb;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:row;
+    height:auto;
+    padding:35px;
+    
 }
+.projects > img{
+    width:260px;
+    margin-right:20px;
+    cursor:pointer;
+    border-radius:10px;
+    transition:0.6s all ease;
+}
+.projects > img:hover{
+    transform:scale(1.1);
+}
+

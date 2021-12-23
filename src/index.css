@@ -1,5 +1,7 @@
 *{
   margin:0;
+  /* scroll-snap-type: y mandatory; */
+  scroll-behavior: smooth;
 }
 body{
   background:rgb(18,23,35);
@@ -35,9 +37,6 @@ body{
   height:calc(100vh - 55px);
   position:relative;
   right:15px;
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
-  scrollbar-width:none
 }
 
 .sections  > *{
@@ -45,3 +44,4 @@ width:100vw;
 height:calc(100vh - 55px);
 scroll-snap-align:start;
 }
+

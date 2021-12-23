@@ -26,16 +26,23 @@ flex-direction:row
     flex-direction: column;
 }
 .sendButton{
-    background:white;
+    background:rgb(0, 255, 191);
     border:none;
     padding:12px 20px;
-    width:90px;
+    width:92%;
     border-radius:4px;
     cursor:pointer;
     transition:0.3s;
+    font-size:15px;
+    font-weight:bold;
 }
 .sendButton:hover{
-    transform:scaleX(1.15)
+    background:rgb(0, 228, 171);
+    color:white;
+    border:2px solid rgb(0, 141, 106)
+}
+.sendButton:focus{
+    transform:scaleX(1.01);
 }
 input, textarea{
     outline:none;
@@ -50,16 +57,21 @@ input, textarea{
 }
 input{
     height:50px;
+    font-family:'Poppins',sans-serif
 }
 input:focus, textarea:focus{
     box-shadow: 0 0 20px rgba(255,255,255,0.2);
-    background:rgba(0,0,0,0.3)
+    background:rgba(0,0,0,0.3);
 }
 input::placeholder, textarea::placeholder{
-    color:white;
+    color:rgba(255,255,255,0.2);
 }
 textarea{
     height:200px;
+}
+.infoInput{
+    padding-left:10px;
+    padding-top:5px;
 }
 .leftContact{
     width:50%;
@@ -69,23 +81,73 @@ textarea{
     flex-direction:column;
     height:calc(100vh - 55px)
 }
-.leftContact > span:nth-child(1){
+/* .leftContact > span:nth-child(1){
     font-size:35px;
     font-weight:100
-}
+} */
 .socialIcons{
-    background:crimson;
     width:100%;
     display: flex;
     justify-content:center;
     align-items:center;
-    flex-direction:row;
+    flex-direction:column;
+    height:inherit;
+    position:absolute;
+    top:240%;
+    right:45%
 }
-.socialIcons > * {
-    margin-left:90px;
+.socialIcons > a {
+    margin-top:40px;
     font-size:30px;
     width:60px;
-    background:rgba(255,255,255,0.3);
     text-align:center;
-    padding:4px 5px;
+    transition:0.3s;
+    cursor:pointer;
+    color:white;
+}
+.icon{
+    padding:10px 15px;
+    transition:0.3s;
+    border-radius:2px;
+}
+.fab.fa-discord:hover{
+    color:#5865F2;
+    background:white;
+
+}
+.fab.fa-youtube:hover{
+    color:red;
+    background:white;
+}
+.fab.fa-twitter:hover{
+    color:#1DA1F2;
+    background:white;
+}
+.fullName::placeholder, .fullName{
+ font-size:14px
+}
+.contactMe{
+    font-size:30px;
+    margin-bottom:10px;
+    font-family:'Poppins',sans-serif;
+    position:relative;
+    right:30px;
+    
+}
+.getInTouch{
+    font-family:'Poppins',sans-serif;
+    font-size:40px;
+    position:relative;
+    left:60px;
+}
+.bottomSection{
+    display:flex;
+    justify-content:center;
+    width:50%;
+    position:relative;
+    bottom:40px;
+}
+.bottomSection > p{
+    font-size:13px;
+    margin:15px;
 }
