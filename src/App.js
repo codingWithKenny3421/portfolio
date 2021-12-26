@@ -1,26 +1,26 @@
 import './index.css'
 import { useState } from 'react'
 import Header from './components/Header'
-import Button from './components/Button'
 import Home from './components/Home'
 import AboutLeft from './components/AboutLeft'
 import AboutRight from './components/AboutRight'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
+import Menu from './components/Menu'
+import ProjectDescription from './components/ProjectDescription'
+
 function App () {
-  const [dark, setDark] = useState(true)
-  
-  function toggleDarkMode(){
-    setDark(!dark)
-    console.log(dark ? 'dark mode is on' : 'dark mode off')
-  }
+  const [toggleMenu, setToggleMenu] = useState(false)
+
  return(
    <div className = 'app'>
-     <Header toggle = {dark}/>
+     <Header toggleMenu = {toggleMenu} setToggleMenu = {setToggleMenu}/>
      <div className="sections">
      <Home/>
+     <Menu toggleMenu = {toggleMenu} setToggleMenu = {setToggleMenu}/>
      <AboutLeft/>
      <AboutRight/>
+<ProjectDescription/>
      <Projects/>
      <Contact/>
   

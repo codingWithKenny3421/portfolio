@@ -137,16 +137,26 @@ cursor:pointer;
 bottom:6px;
   }
   .line{
-    width:25px;
-    height:3px;
+    width:30px;
+    height:4px;
     background:white;
-    margin-top:8px;
-    transition:0.5s;
+    margin-top:9px;
+    transition:1s;
+    position:relative;
+    border-radius:50px
   }
 .line1{
-  position:relative;
-  top:5px;
+
 }
 .line1.active{
-  transform:rotate(-45deg)
+  transform:rotate(-50deg) translateY(13px) translateX(-14px) scale(1.25);
+
+}
+.line2.active{
+  transform:translateX(-50px);
+  background:transparent;
+  transition:1s;
+}
+.line3.active{
+  transform:rotate(50deg) translateY(-5px) translateX(-5px) scale(1.25)
 }

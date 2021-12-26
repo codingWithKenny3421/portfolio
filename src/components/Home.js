@@ -37,7 +37,6 @@ const Home = () => {
                     </div>
                     <p  className = 'reaction'>{slapFace ? 'Ouch, not that hard!' : 'Slap me as hard as you can!'}</p>
                     <div className = 'rightHome'>
-                    <span className = 'greeting'>Hi There, I'm</span>
                      <h1 className = 'fullName'>Kenny Malis</h1>
                      <button className = 'slapButton' onClick = {slapMyFace}>Slap Me</button>
                      <br/>

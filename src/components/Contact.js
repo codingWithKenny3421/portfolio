@@ -26,7 +26,7 @@ const Contact = () => {
 
          
           <textarea name ='Message' className = 'messageForm infoInput' placeholder = 'Send me any questions you may have 🙂' required></textarea>
-          <button className = 'sendButton' >Send <i class="fas fa-angle-right" id='angleIcon'></i></button>
+          <button className = 'sendButton' >Send Message</button>
                   </form>
               </div>
             </div>

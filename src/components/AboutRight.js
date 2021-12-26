@@ -4,6 +4,8 @@ import cssLogo from '../assets/cssLogo.png'
 import htmlLogo from '../assets/htmlLogo.png'
 import jsLogo from '../assets/jsLogo.png'
 import pythonLogo from '../assets/python.png'
+import nodeJsLogo from '../assets/nodeJsLogo.png'
+import reactLogo from '../assets/reactLogo.png'
 const AboutRight = () => {
     return (
         <div className = 'aboutRight'>
@@ -27,8 +29,15 @@ const AboutRight = () => {
                      
                      <div className = 'skillInfo pythonInfo'>
                      <img src = {pythonLogo} className = 'logo pythonLogo'></img>
-                
                      </div>
+
+                     <div className = 'skillInfo reactInfo'>
+                     <img src = {reactLogo} className = 'logo reactLogo'></img>
+                     </div>
+                     <div className = 'skillInfo nodeJsInfo'>
+                     <img src = {nodeJsLogo} className = 'logo nodeJsLogo'></img>
+                     </div>
+
            
                      </div>
                     </div>
